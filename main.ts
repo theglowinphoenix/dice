@@ -1,6 +1,7 @@
 let dice = 0
 input.onGesture(Gesture.Shake, function () {
     dice = randint(0, 6)
+    music.playTone(349, music.beat(BeatFraction.Whole))
     if (dice == 1) {
         basic.showLeds(`
             . . . . .

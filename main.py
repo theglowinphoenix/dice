@@ -3,6 +3,7 @@ dice = 0
 def on_gesture_shake():
     global dice
     dice = randint(0, 6)
+    music.play_tone(349, music.beat(BeatFraction.WHOLE))
     if dice == 1:
         basic.show_leds("""
             . . . . .
