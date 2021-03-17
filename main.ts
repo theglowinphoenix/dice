@@ -1,4 +1,9 @@
 let dice = 0
+input.onButtonPressed(Button.A, function () {
+    dice = randint(0, 6)
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    basic.showNumber(dice)
+})
 input.onGesture(Gesture.Shake, function () {
     dice = randint(0, 6)
     music.playTone(262, music.beat(BeatFraction.Whole))
