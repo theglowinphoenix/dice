@@ -1,6 +1,6 @@
 let dice = 0
 input.onButtonPressed(Button.A, function () {
-    dice = randint(0, 6)
+    dice = randint(1, 6)
     music.playTone(262, music.beat(BeatFraction.Whole))
     basic.showNumber(dice)
 })
